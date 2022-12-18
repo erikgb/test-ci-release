@@ -29,5 +29,7 @@ jobs:
             conventional-changelog-conventionalcommits
         env:
           GITHUB_TOKEN: ${{ secrets.STAS_RELEASE_TOKEN }}
+      - run: |
+          echo $GITHUB_SHA > dummy.txt
       - uses: peter-evans/create-pull-request@v4
         if: steps.semantic-release.outputs.new_release_published == 'true'
