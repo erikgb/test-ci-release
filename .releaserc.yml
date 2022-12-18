@@ -1,6 +1,6 @@
 ---
 branches:
-  - name: main
+  - name: configure-conventional-releases
 # TODO: Remove; Might be useful to have some debug when attempting the first releases
 debug: true
 plugins:
