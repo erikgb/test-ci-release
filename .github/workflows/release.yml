@@ -22,5 +22,7 @@ jobs:
         with:
           token: ${{ secrets.STAS_RELEASE_TOKEN }}
       - uses: cycjimmy/semantic-release-action@8f6ceb9d5aae5578b1dcda6af00008235204e7fa # v3.2.0
+        with:
+          dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.STAS_RELEASE_TOKEN }}
