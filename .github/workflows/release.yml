@@ -1,7 +1,9 @@
 ---
 name: Release
 on:
-  - push
+  push:
+    branches:
+      - main
 permissions:  # added using https://github.com/step-security/secure-workflows
   contents: read
 
