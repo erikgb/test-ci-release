@@ -33,3 +33,5 @@ jobs:
           echo $GITHUB_SHA > dummy.txt
       - uses: peter-evans/create-pull-request@v4
         if: steps.semantic-release.outputs.new_release_published == 'true'
+        with:
+          token: ${{ secrets.STAS_RELEASE_TOKEN }}
