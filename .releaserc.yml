@@ -9,7 +9,7 @@ plugins:
       releaseRules:
         - type: chore
           scope: deps
-          release: minor
+          release: patch
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
   - "@semantic-release/github"
