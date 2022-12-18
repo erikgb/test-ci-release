@@ -16,5 +16,5 @@ plugins:
         types:
           - type: chore
             scope: deps
-            hidden: Dependencies
+            section: Dependencies
   - "@semantic-release/github"
