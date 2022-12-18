@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - create-pr
 permissions:  # added using https://github.com/step-security/secure-workflows
   contents: read
 
@@ -22,9 +22,12 @@ jobs:
         with:
           token: ${{ secrets.STAS_RELEASE_TOKEN }}
       - uses: cycjimmy/semantic-release-action@8f6ceb9d5aae5578b1dcda6af00008235204e7fa # v3.2.0
+        id: semantic-release
         with:
           dry_run: true
           extra_plugins: |
             conventional-changelog-conventionalcommits
         env:
           GITHUB_TOKEN: ${{ secrets.STAS_RELEASE_TOKEN }}
+      - uses: peter-evans/create-pull-request@v4
+        if: steps.semantic-release.outputs.new_release_published == 'true'
