@@ -12,4 +12,9 @@ plugins:
           release: patch
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
+      presetConfig:
+        types:
+          - type: chore
+            scope: deps
+            hidden: Dependencies
   - "@semantic-release/github"
