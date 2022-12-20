@@ -13,6 +13,8 @@ jobs:
           bump-minor-pre-major: true
           changelog-types: >
             [
-              { "type": "build", "scope": "deps", "section": "Dependency Updates", "hidden": false }
+              { "type": "feat", "section": "Features" },
+              { "type": "fix", "section": "Bug Fixes" },
+              { "type": "build", "scope": "deps", "section": "Dependency Updates" }
             ]
           release-type: go
