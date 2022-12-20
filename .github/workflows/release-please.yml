@@ -11,5 +11,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           bump-minor-pre-major: true
-          package-name: test-ci-release
           release-type: go
