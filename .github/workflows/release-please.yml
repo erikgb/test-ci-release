@@ -13,4 +13,3 @@ jobs:
           bump-minor-pre-major: true
           package-name: test-ci-release
           release-type: go
-          token: ${{ secrets.STAS_RELEASE_TOKEN }}
