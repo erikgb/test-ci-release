@@ -4,4 +4,4 @@ kind: Kustomization
 images:
   - name: controller
     newName: image-scanner/controller
-    newTag: latest # x-release-please-version
+    newTag: 0.0.0 # x-release-please-version
