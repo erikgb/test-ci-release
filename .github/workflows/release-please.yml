@@ -11,4 +11,6 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           bump-minor-pre-major: true
+          changelog-types: |
+            { type: 'build', scope: 'deps', section: 'Dependency Updates' }
           release-type: go
