@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/erikgb/test-ci-release/compare/v0.1.0...v0.2.0) (2022-12-21)
+
+
+### Features
+
+* simulate new feature ([341f8e2](https://github.com/erikgb/test-ci-release/commit/341f8e25c0a18eeff5c0c721b748af9b3e570653))
+
+
+### Dependency Updates
+
+* **deps:** simulate Dependabot ([2c86e38](https://github.com/erikgb/test-ci-release/commit/2c86e3815b5b408333866341edab2274988fdbb6))
+
 ## [0.1.0](https://github.com/erikgb/test-ci-release/compare/v0.0.0...v0.1.0) (2022-12-20)
 
 
